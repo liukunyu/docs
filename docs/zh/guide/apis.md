@@ -271,7 +271,7 @@ curl --data '{
 
 ### `broadcast_transaction`
 
-通过broadcast_transaction来广播一笔转账交易: 1.2.17 --> 1.2.6 10GXC
+通过broadcast_transaction来广播一笔转账交易
 
 ``` bash
 curl --data '{
@@ -281,4 +281,9 @@ curl --data '{
     "id": 1
 }' https://node1.gxb.io/rpc
 ```
+
+####params参数说明
+- "params": \[2,"broadcast_transaction",\[{带签名的交易，上述以转账的交易为例}\]\]
+- 数字2用于定位广播相关的api，必须填2
+- "broadcast_transaction"，表示调用广播交易api
 
